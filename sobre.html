@@ -19,8 +19,8 @@
 <body>
 
     <!-- ==========================================
-       CABECALHO E NAVEGACAO SUPERIOR
-       ========================================== -->
+    CABECALHO E NAVEGACAO SUPERIOR
+    ========================================== -->
     <header class="site-header">
         <div class="container header-inner">
 
@@ -35,10 +35,6 @@
             <!-- Links de Navegação & Botão ⌘+K -->
             <div class="header-nav-links">
                 <a href="index.html" class="nav-btn-link">Início</a>
-                <a href="sobre.html" class="nav-btn-link active">Sobre mim</a>
-                <button class="cmd-badge-btn" data-open-cmd aria-label="Abrir Menu de Comandos">
-                    <span>⌘</span><span>+</span><span>K</span>
-                </button>
             </div>
 
         </div>
@@ -46,9 +42,9 @@
 
     <main>
         <!-- ==========================================
-         SECAO SOBRE MIM (ESTILO RAUM MODELO)
-         ========================================== -->
-        <section class="hero-section" style="padding-bottom: 20px;">
+    SECAO SOBRE MIM (ESTILO RAUM MODELO)
+    ========================================== -->
+        <section class="hero-section pb-20">
             <div class="container">
 
                 <!-- Duas Colunas de Titulo -->
@@ -138,26 +134,25 @@
 
                     <!-- Coluna 2: História & Trajetória Técnica -->
                     <div>
-                        <h2 style="font-family: var(--font-heading); font-size: 2.2rem; margin-bottom: 20px;">
-                            Construindo aplicações modernas com sólida base em POO.
+                        <h2 class="bio-main-title">
+                            Desenvolvendo com POO e WEB.
                         </h2>
 
-                        <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.05rem; margin-bottom: 20px;">
+                        <p class="bio-text">
                             Sou estudante do 6º período de Ciência da Computação na Unincor, atualmente aprofundando
                             meus conhecimentos na disciplina de Programação Orientada a Objetos (POO). Tenho paixão pela
                             construção de sistemas modulares, reutilizáveis e com excelente arquitetura de código.
                         </p>
 
-                        <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.05rem; margin-bottom: 30px;">
+                        <p class="bio-text mb-30">
                             Além dos conceitos fundamentais de orientação a objetos (como herança, polimorfismo,
                             abstração e encapsulamento), dedico meu tempo ao desenvolvimento frontend moderno, criando
                             interfaces dinâmicas, limpas e interativas com foco na experiência do usuário.
                         </p>
 
-                        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 16px;">Stack
-                            Principal de Tecnologias</h3>
+                        <h3 class="stack-title">Stack Principal de Tecnologias</h3>
 
-                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 40px;">
+                        <div class="stack-tags">
                             <span class="pill-btn">Programação POO (Java)</span>
                             <span class="pill-btn">HTML5 & CSS3 Avançado</span>
                             <span class="pill-btn">JavaScript (ES6+)</span>
@@ -165,22 +160,15 @@
                             <span class="pill-btn">Git & GitHub</span>
                             <span class="pill-btn">Arquitetura de Sistemas</span>
                         </div>
-
-                        <a href="index.html" class="cmd-badge-btn"
-                            style="display: inline-flex; text-decoration: none; padding: 12px 24px; font-size: 0.95rem;">
-                            Ver Página Inicial →
-                        </a>
                     </div>
-
                 </div>
-
             </div>
         </section>
     </main>
 
     <!-- ==========================================
-       MENU DE COMANDOS (⌘+K) MODAL
-       ========================================== -->
+    MENU DE COMANDOS (⌘+K) MODAL
+    ========================================== -->
     <div class="modal-overlay" id="command-palette">
         <div class="cmd-modal-card">
             <div class="cmd-input-bar">
@@ -195,15 +183,15 @@
                 <div class="cmd-group-title">Navegação Rápida</div>
                 <div class="cmd-row" data-action="nav-home">
                     <span>Ir para Página Inicial (Início)</span>
-                    <span style="font-family: var(--font-mono); font-size: 0.8rem;">G H</span>
+                    <span class="cmd-shortcut">G H</span>
                 </div>
                 <div class="cmd-row" data-action="nav-portfolio">
                     <span>Ver Competências & Especialidades</span>
-                    <span style="font-family: var(--font-mono); font-size: 0.8rem;">G P</span>
+                    <span class="cmd-shortcut">G P</span>
                 </div>
                 <div class="cmd-row" data-action="open-calc">
                     <span>Calcular Estimativa de Projeto</span>
-                    <span style="font-family: var(--font-mono); font-size: 0.8rem;">⌘ C</span>
+                    <span class="cmd-shortcut">⌘ C</span>
                 </div>
 
                 <div class="cmd-group-title">Temas de Cores</div>
@@ -227,60 +215,51 @@
     </div>
 
     <!-- ==========================================
-       MODAL CALCULADORA DE PROJETOS
-       ========================================== -->
+    MODAL CALCULADORA DE PROJETOS
+    ========================================== -->
     <div class="modal-overlay" id="calculator-modal">
-        <div class="detail-modal-card" style="max-width: 600px;">
+        <div class="detail-modal-card calc-modal-card">
             <button class="modal-close-icon" aria-label="Fechar modal">✕</button>
 
-            <h2 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 20px;">Calculadora de
-                Orçamento</h2>
+            <h2 class="calc-title">Calculadora de Orçamento</h2>
 
             <div class="calc-grid">
                 <div class="calc-box selected" data-calc-type="spatial">
-                    <h4 style="font-size: 1.1rem;">Sistema Web POO</h4>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Aplicação completa
-                        orientada a objetos</p>
+                    <h4>Sistema Web POO</h4>
+                    <p>Aplicação completa orientada a objetos</p>
                 </div>
                 <div class="calc-box" data-calc-type="landing">
-                    <h4 style="font-size: 1.1rem;">Landing Page de Estúdio</h4>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Interface orientada a
-                        comandos (⌘K)</p>
+                    <h4>Landing Page de Estúdio</h4>
+                    <p>Interface orientada a comandos (⌘K)</p>
                 </div>
             </div>
 
-            <div
-                style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 24px; text-align: center; border-radius: 8px; margin: 20px 0;">
-                <span style="font-size: 0.9rem; color: var(--text-muted);">Investimento Estimado:</span>
-                <div id="calc-estimate-price"
-                    style="font-size: 2.8rem; font-weight: 800; color: var(--text-main); margin: 8px 0;">R$ 4.500</div>
+            <div class="calc-estimate-box">
+                <span class="calc-label">Investimento Estimado:</span>
+                <div id="calc-estimate-price">R$ 4.500</div>
             </div>
 
-            <button class="cmd-badge-btn" id="calc-submit-btn"
-                style="width: 100%; justify-content: center; padding: 14px;">
+            <button class="cmd-badge-btn" id="calc-submit-btn">
                 Enviar Solicitação de Orçamento
             </button>
         </div>
     </div>
 
     <!-- ==========================================
-       MODAL DETALHES DE ESTUDO DE CASO
-       ========================================== -->
+    MODAL DETALHES DE ESTUDO DE CASO
+    ========================================== -->
     <div class="modal-overlay" id="case-study-modal">
         <div class="detail-modal-card">
             <button class="modal-close-icon" aria-label="Fechar modal">✕</button>
-            <h2 id="modal-case-title" style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 12px;">
-                Título do Projeto</h2>
-            <p id="modal-case-desc" style="color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">Descrição
-                detalhada do projeto e tecnologias POO empregadas...</p>
-            <img id="modal-case-img" src="imgs/fintech.jpg" alt="Prévia do projeto"
-                style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-color);" />
+            <h2 id="modal-case-title">Título do Projeto</h2>
+            <p id="modal-case-desc">Descrição detalhada do projeto e tecnologias POO empregadas...</p>
+            <img id="modal-case-img" src="imgs/fintech.jpg" alt="Prévia do projeto" />
         </div>
     </div>
 
     <!-- ==========================================
-       RODAPE
-       ========================================== -->
+    RODAPE
+    ========================================== -->
     <footer class="site-footer">
         <div class="container footer-row">
             <div>© 2026 Gabriel José. Ciência da Computação - Unincor.</div>
