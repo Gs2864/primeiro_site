@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="neutral">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel José — Desenvolvimento de Software & Ciência da Computação</title>
+
+  <!-- Google Fonts & Tipografia -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       CABECALHO E NAVEGACAO SUPERIOR
+       ========================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- Logo do Gabriel José -->
+      <a href="index.html" class="brand-title">GABRIEL PEREIRA JOSÉ DA SILVA</a>
+
+      <!-- Subtítulo Central -->
+      <div class="header-subtitle">
+        Ciência da Computação — 6º Período
+      </div>
+
+      <!-- Links de Navegação & Botão ⌘+K -->
+      <div class="header-nav-links">
+        <a href="sobre.html" class="nav-btn-link">Sobre mim</a>
+        <button class="cmd-badge-btn" data-open-cmd aria-label="Abrir Menu de Comandos">
+          <span>⌘</span><span>+</span><span>K</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         SECAO HERO (ESTILO RAUM MODELO)
+         ========================================== -->
+    <section class="hero-section">
+      <div class="container">
+
+        <!-- Duas Colunas Principais -->
+        <div class="hero-top-grid">
+          <div>
+            <h1 class="hero-main-title">
+              Meu Primeiro Site<br>
+            </h1>
+          </div>
+          <div>
+            <h2 class="hero-right-title">
+              Desenvolvimento de Software<br>& Programação POO
+            </h2>
+          </div>
+        </div>
+
+        <!-- Barra Sub-Hero: Seletor Vertical de Temas & Cidades -->
+        <div class="subhero-bar">
+
+          <!-- Seletor Vertical de Temas (5 Cores) -->
+          <div class="vertical-theme-bar">
+            <button class="theme-dot-btn neutral active" data-theme="neutral" title="Tema Neutro"></button>
+            <button class="theme-dot-btn rose" data-theme="rose" title="Tema Rosa Elegante"></button>
+            <button class="theme-dot-btn emerald" data-theme="emerald" title="Tema Esmeralda"></button>
+            <button class="theme-dot-btn amber" data-theme="amber" title="Tema Âmbar"></button>
+            <button class="theme-dot-btn contrast" data-theme="contrast" title="Tema Alto Contraste Escuro"></button>
+          </div>
+
+          <!-- Colunas de Saudações por Cidade / Faculdade -->
+          <div class="cities-grid">
+            <div class="city-col">
+              <span class="city-name">Três Corações</span>
+              <span class="city-greeting">Unincor</span>
+            </div>
+            <div class="city-col">
+              <span class="city-name">6º Período</span>
+              <span class="city-greeting">Ciência da Computação</span>
+            </div>
+            <div class="city-col">
+              <span class="city-name">Minas Gerais</span>
+              <span class="city-greeting">Brasil 🇧🇷</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SERVICOS E COMPETENCIAS
+         ========================================== -->
+    <section class="section-wrap" id="services" style="background: var(--bg-surface);">
+      <div class="container">
+
+        <h2 class="section-head-title" style="margin-bottom: 40px;">Competências & Especialidades</h2>
+
+        <div class="services-list">
+          <div class="service-box">
+            <div class="service-num">01</div>
+            <h3 class="service-name">Arquitetura de Software & POO</h3>
+            <p class="service-desc">Desenvolvimento orientado a objetos focando em abstração, encapsulamento, herança e
+              polimorfismo para criar sistemas modulares e escaláveis.</p>
+          </div>
+
+          <div class="service-box">
+            <div class="service-num">02</div>
+            <h3 class="service-name">Desenvolvimento Web Moderno</h3>
+            <p class="service-desc">Criação de aplicações web dinâmicas, responsivas e ultrarrápidas utilizando HTML5,
+              CSS3 avançado, JavaScript e navegação por comandos.</p>
+          </div>
+
+          <div class="service-box">
+            <div class="service-num">03</div>
+            <h3 class="service-name">Design de Interfaces & UX</h3>
+            <p class="service-desc">Concepção de interfaces minimalistas, com suporte a múltiplos temas (5 cores), menu
+              de comandos (⌘K) e alta usabilidade.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       MENU DE COMANDOS (⌘+K) MODAL
+       ========================================== -->
+  <div class="modal-overlay" id="command-palette">
+    <div class="cmd-modal-card">
+      <div class="cmd-input-bar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+        <input type="text" id="cmd-input" placeholder="Digite um comando ou pesquise..." autofocus />
+      </div>
+
+      <div class="cmd-list">
+        <div class="cmd-group-title">Navegação Rápida</div>
+        <div class="cmd-row" data-action="nav-sobre">
+          <span>Ir para Página Sobre Mim</span>
+          <span style="font-family: var(--font-mono); font-size: 0.8rem;">G A</span>
+        </div>
+        <div class="cmd-row" data-action="nav-portfolio">
+          <span>Ver Competências & Especialidades</span>
+          <span style="font-family: var(--font-mono); font-size: 0.8rem;">G P</span>
+        </div>
+        <div class="cmd-row" data-action="open-calc">
+          <span>Calcular Estimativa de Projeto</span>
+          <span style="font-family: var(--font-mono); font-size: 0.8rem;">⌘ C</span>
+        </div>
+
+        <div class="cmd-group-title">Temas de Cores</div>
+        <div class="cmd-row" data-action="set-theme-neutral">
+          <span>Ativar Tema Neutro</span>
+        </div>
+        <div class="cmd-row" data-action="set-theme-contrast">
+          <span>Ativar Tema Alto Contraste Escuro</span>
+        </div>
+        <div class="cmd-row" data-action="set-theme-rose">
+          <span>Ativar Tema Rosa Elegante</span>
+        </div>
+        <div class="cmd-row" data-action="set-theme-emerald">
+          <span>Ativar Tema Esmeralda</span>
+        </div>
+        <div class="cmd-row" data-action="set-theme-amber">
+          <span>Ativar Tema Âmbar</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL CALCULADORA DE PROJETOS
+       ========================================== -->
+  <div class="modal-overlay" id="calculator-modal">
+    <div class="detail-modal-card" style="max-width: 600px;">
+      <button class="modal-close-icon" aria-label="Fechar modal">✕</button>
+
+      <h2 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 20px;">Calculadora de Orçamento
+      </h2>
+
+      <div class="calc-grid">
+        <div class="calc-box selected" data-calc-type="spatial">
+          <h4 style="font-size: 1.1rem;">Sistema Web POO</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Aplicação completa orientada a
+            objetos</p>
+        </div>
+        <div class="calc-box" data-calc-type="landing">
+          <h4 style="font-size: 1.1rem;">Landing Page de Estúdio</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Interface orientada a comandos (⌘K)
+          </p>
+        </div>
+      </div>
+
+      <div
+        style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 24px; text-align: center; border-radius: 8px; margin: 20px 0;">
+        <span style="font-size: 0.9rem; color: var(--text-muted);">Investimento Estimado:</span>
+        <div id="calc-estimate-price"
+          style="font-size: 2.8rem; font-weight: 800; color: var(--text-main); margin: 8px 0;">R$ 4.500</div>
+      </div>
+
+      <button class="cmd-badge-btn" id="calc-submit-btn" style="width: 100%; justify-content: center; padding: 14px;">
+        Enviar Solicitação de Orçamento
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL DETALHES DE ESTUDO DE CASO
+       ========================================== -->
+  <div class="modal-overlay" id="case-study-modal">
+    <div class="detail-modal-card">
+      <button class="modal-close-icon" aria-label="Fechar modal">✕</button>
+      <h2 id="modal-case-title" style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 12px;">Título
+        do Projeto</h2>
+      <p id="modal-case-desc" style="color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">Descrição
+        detalhada do projeto e tecnologias POO empregadas...</p>
+      <img id="modal-case-img" src="imgs/fintech.jpg" alt="Prévia do projeto"
+        style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-color);" />
+    </div>
+  </div>
+
+  <!-- ==========================================
+       RODAPE
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© 2026 Gabriel José. Ciência da Computação - Unincor.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

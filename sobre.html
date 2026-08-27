@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="neutral">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Mim — Gabriel José | Ciência da Computação</title>
+
+    <!-- Google Fonts & Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="sobre.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+       CABECALHO E NAVEGACAO SUPERIOR
+       ========================================== -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <!-- Logo do Gabriel José -->
+            <a href="index.html" class="brand-title">GABRIEL PEREIRA JOSÉ DA SILVA</a>
+
+            <!-- Subtítulo Central -->
+            <div class="header-subtitle">
+                Ciência da Computação — 6º Período
+            </div>
+
+            <!-- Links de Navegação & Botão ⌘+K -->
+            <div class="header-nav-links">
+                <a href="index.html" class="nav-btn-link">Início</a>
+                <a href="sobre.html" class="nav-btn-link active">Sobre mim</a>
+                <button class="cmd-badge-btn" data-open-cmd aria-label="Abrir Menu de Comandos">
+                    <span>⌘</span><span>+</span><span>K</span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================
+         SECAO SOBRE MIM (ESTILO RAUM MODELO)
+         ========================================== -->
+        <section class="hero-section" style="padding-bottom: 20px;">
+            <div class="container">
+
+                <!-- Duas Colunas de Titulo -->
+                <div class="hero-top-grid">
+                    <div>
+                        <h1 class="hero-main-title">
+                            Sobre mim
+                        </h1>
+                    </div>
+                    <div>
+                        <h2 class="hero-right-title">
+                            Analista de TI &<br>Estudante de Ciência da Computação
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Barra Sub-Hero: Seletor Vertical de Temas & Cidades -->
+                <div class="subhero-bar">
+
+                    <!-- Seletor Vertical de Temas (5 Cores) -->
+                    <div class="vertical-theme-bar">
+                        <button class="theme-dot-btn neutral active" data-theme="neutral" title="Tema Neutro"></button>
+                        <button class="theme-dot-btn rose" data-theme="rose" title="Tema Rosa Elegante"></button>
+                        <button class="theme-dot-btn emerald" data-theme="emerald" title="Tema Esmeralda"></button>
+                        <button class="theme-dot-btn amber" data-theme="amber" title="Tema Âmbar"></button>
+                        <button class="theme-dot-btn contrast" data-theme="contrast"
+                            title="Tema Alto Contraste Escuro"></button>
+                    </div>
+
+                    <!-- Colunas de Saudações por Cidade / Faculdade -->
+                    <div class="cities-grid">
+                        <div class="city-col">
+                            <span class="city-name">Três Corações</span>
+                            <span class="city-greeting">Unincor</span>
+                        </div>
+                        <div class="city-col">
+                            <span class="city-name">6º Período</span>
+                            <span class="city-greeting">Ciência da Computação</span>
+                        </div>
+                        <div class="city-col">
+                            <span class="city-name">Minas Gerais</span>
+                            <span class="city-greeting">Brasil 🇧🇷</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card de Perfil & Bio em 2 Colunas -->
+                <div class="profile-card-wrap">
+
+                    <!-- Coluna 1: Profile Card com Avatar -->
+                    <div class="profile-card">
+                        <img src="gatinho-fofo.png" alt="Gabriel José Profile" class="profile-pic" />
+                        <h2 class="profile-name">Gabriel José</h2>
+                        <p class="profile-role">Estudante de Ciência da Computação</p>
+
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="label">Nascimento</span>
+                                <span class="value">31/12/2001</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">País</span>
+                                <span class="value">Brasil 🇧🇷</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Idioma</span>
+                                <span class="value">Português (BR)</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Status</span>
+                                <span class="value active">Ativo (6º Período)</span>
+                            </div>
+                        </div>
+
+                        <div class="stats-row">
+                            <div class="stat-box">
+                                <div class="number">10+</div>
+                                <div class="label">Projetos</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="number">3</div>
+                                <div class="label">Anos de Estudo</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coluna 2: História & Trajetória Técnica -->
+                    <div>
+                        <h2 style="font-family: var(--font-heading); font-size: 2.2rem; margin-bottom: 20px;">
+                            Construindo aplicações modernas com sólida base em POO.
+                        </h2>
+
+                        <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.05rem; margin-bottom: 20px;">
+                            Sou estudante do 6º período de Ciência da Computação na Unincor, atualmente aprofundando
+                            meus conhecimentos na disciplina de Programação Orientada a Objetos (POO). Tenho paixão pela
+                            construção de sistemas modulares, reutilizáveis e com excelente arquitetura de código.
+                        </p>
+
+                        <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.05rem; margin-bottom: 30px;">
+                            Além dos conceitos fundamentais de orientação a objetos (como herança, polimorfismo,
+                            abstração e encapsulamento), dedico meu tempo ao desenvolvimento frontend moderno, criando
+                            interfaces dinâmicas, limpas e interativas com foco na experiência do usuário.
+                        </p>
+
+                        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 16px;">Stack
+                            Principal de Tecnologias</h3>
+
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 40px;">
+                            <span class="pill-btn">Programação POO (Java)</span>
+                            <span class="pill-btn">HTML5 & CSS3 Avançado</span>
+                            <span class="pill-btn">JavaScript (ES6+)</span>
+                            <span class="pill-btn">Engenharia de Software</span>
+                            <span class="pill-btn">Git & GitHub</span>
+                            <span class="pill-btn">Arquitetura de Sistemas</span>
+                        </div>
+
+                        <a href="index.html" class="cmd-badge-btn"
+                            style="display: inline-flex; text-decoration: none; padding: 12px 24px; font-size: 0.95rem;">
+                            Ver Página Inicial →
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+       MENU DE COMANDOS (⌘+K) MODAL
+       ========================================== -->
+    <div class="modal-overlay" id="command-palette">
+        <div class="cmd-modal-card">
+            <div class="cmd-input-bar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                </svg>
+                <input type="text" id="cmd-input" placeholder="Digite um comando ou pesquise..." autofocus />
+            </div>
+
+            <div class="cmd-list">
+                <div class="cmd-group-title">Navegação Rápida</div>
+                <div class="cmd-row" data-action="nav-home">
+                    <span>Ir para Página Inicial (Início)</span>
+                    <span style="font-family: var(--font-mono); font-size: 0.8rem;">G H</span>
+                </div>
+                <div class="cmd-row" data-action="nav-portfolio">
+                    <span>Ver Competências & Especialidades</span>
+                    <span style="font-family: var(--font-mono); font-size: 0.8rem;">G P</span>
+                </div>
+                <div class="cmd-row" data-action="open-calc">
+                    <span>Calcular Estimativa de Projeto</span>
+                    <span style="font-family: var(--font-mono); font-size: 0.8rem;">⌘ C</span>
+                </div>
+
+                <div class="cmd-group-title">Temas de Cores</div>
+                <div class="cmd-row" data-action="set-theme-neutral">
+                    <span>Ativar Tema Neutro</span>
+                </div>
+                <div class="cmd-row" data-action="set-theme-contrast">
+                    <span>Ativar Tema Alto Contraste Escuro</span>
+                </div>
+                <div class="cmd-row" data-action="set-theme-rose">
+                    <span>Ativar Tema Rosa Elegante</span>
+                </div>
+                <div class="cmd-row" data-action="set-theme-emerald">
+                    <span>Ativar Tema Esmeralda</span>
+                </div>
+                <div class="cmd-row" data-action="set-theme-amber">
+                    <span>Ativar Tema Âmbar</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+       MODAL CALCULADORA DE PROJETOS
+       ========================================== -->
+    <div class="modal-overlay" id="calculator-modal">
+        <div class="detail-modal-card" style="max-width: 600px;">
+            <button class="modal-close-icon" aria-label="Fechar modal">✕</button>
+
+            <h2 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 20px;">Calculadora de
+                Orçamento</h2>
+
+            <div class="calc-grid">
+                <div class="calc-box selected" data-calc-type="spatial">
+                    <h4 style="font-size: 1.1rem;">Sistema Web POO</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Aplicação completa
+                        orientada a objetos</p>
+                </div>
+                <div class="calc-box" data-calc-type="landing">
+                    <h4 style="font-size: 1.1rem;">Landing Page de Estúdio</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Interface orientada a
+                        comandos (⌘K)</p>
+                </div>
+            </div>
+
+            <div
+                style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 24px; text-align: center; border-radius: 8px; margin: 20px 0;">
+                <span style="font-size: 0.9rem; color: var(--text-muted);">Investimento Estimado:</span>
+                <div id="calc-estimate-price"
+                    style="font-size: 2.8rem; font-weight: 800; color: var(--text-main); margin: 8px 0;">R$ 4.500</div>
+            </div>
+
+            <button class="cmd-badge-btn" id="calc-submit-btn"
+                style="width: 100%; justify-content: center; padding: 14px;">
+                Enviar Solicitação de Orçamento
+            </button>
+        </div>
+    </div>
+
+    <!-- ==========================================
+       MODAL DETALHES DE ESTUDO DE CASO
+       ========================================== -->
+    <div class="modal-overlay" id="case-study-modal">
+        <div class="detail-modal-card">
+            <button class="modal-close-icon" aria-label="Fechar modal">✕</button>
+            <h2 id="modal-case-title" style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 12px;">
+                Título do Projeto</h2>
+            <p id="modal-case-desc" style="color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">Descrição
+                detalhada do projeto e tecnologias POO empregadas...</p>
+            <img id="modal-case-img" src="imgs/fintech.jpg" alt="Prévia do projeto"
+                style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-color);" />
+        </div>
+    </div>
+
+    <!-- ==========================================
+       RODAPE
+       ========================================== -->
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <div>© 2026 Gabriel José. Ciência da Computação - Unincor.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
