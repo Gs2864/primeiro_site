@@ -1,12 +1,13 @@
 /* ==========================================================================
-   SOBRE MIM — ESTILOS DEDICADOS (SOBRE.CSS)
-   Design System: 5 Temas, Card de Perfil, Tipografia Editorial & Modais ⌘+K
+  SOBRE MIM — ESTILOS DEDICADOS (SOBRE.CSS)
+  Design System: 5 Temas, Card de Perfil, Tipografia Editorial & Modais ⌘+K
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* --- PALETAS DE CORES (5 TEMAS) --- */
-:root, [data-theme="neutral"] {
+:root,
+[data-theme="neutral"] {
   --bg-main: #ffffff;
   --bg-card: #f8f8f7;
   --bg-card-hover: #f1f1ef;
@@ -95,7 +96,9 @@
 }
 
 /* --- RESET & BASE STYLES --- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -177,7 +180,8 @@ body {
   transition: all 0.2s ease;
 }
 
-.nav-btn-link:hover, .nav-btn-link.active {
+.nav-btn-link:hover,
+.nav-btn-link.active {
   background: var(--bg-card);
   border-color: var(--border-color-hover);
 }
@@ -260,16 +264,31 @@ body {
   background: transparent;
 }
 
-.theme-dot-btn:hover, .theme-dot-btn.active {
+.theme-dot-btn:hover,
+.theme-dot-btn.active {
   transform: scale(1.3);
   border-color: var(--text-main);
 }
 
-.theme-dot-btn.neutral { background: #d4d4d8; }
-.theme-dot-btn.rose { background: #f472b6; }
-.theme-dot-btn.emerald { background: #4ade80; }
-.theme-dot-btn.amber { background: #fbbf24; }
-.theme-dot-btn.contrast { background: #18181b; }
+.theme-dot-btn.neutral {
+  background: #d4d4d8;
+}
+
+.theme-dot-btn.rose {
+  background: #f472b6;
+}
+
+.theme-dot-btn.emerald {
+  background: #4ade80;
+}
+
+.theme-dot-btn.amber {
+  background: #fbbf24;
+}
+
+.theme-dot-btn.contrast {
+  background: #18181b;
+}
 
 .cities-grid {
   display: flex;
@@ -529,7 +548,8 @@ body {
   cursor: pointer;
 }
 
-.calc-box.selected, .calc-box:hover {
+.calc-box.selected,
+.calc-box:hover {
   border-color: var(--text-main);
   background: var(--bg-card-hover);
 }
@@ -678,7 +698,17 @@ body {
 
 /* --- RESPONSIVO --- */
 @media (max-width: 900px) {
-  .hero-top-grid, .profile-card-wrap { grid-template-columns: 1fr; }
-  .header-subtitle { display: none; }
-  .cities-grid { gap: 30px; }
+
+  .hero-top-grid,
+  .profile-card-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .header-subtitle {
+    display: none;
+  }
+
+  .cities-grid {
+    gap: 30px;
+  }
 }
